@@ -1,4 +1,4 @@
-# Django Intro Template 🚀
+# Django Intro - http, template, static 🚀
 
 This project demonstrates the basic workflow of Django:
 
@@ -369,4 +369,5 @@ GitHub: https://github.com/rafi-shoishab
 # 📄 License
 
 This project is created for educational purposes.
+
 
