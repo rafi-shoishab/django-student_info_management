@@ -12,7 +12,7 @@ This is a beginner-friendly project to understand how Django works internally.
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
 This project shows how:
 
@@ -23,7 +23,7 @@ This project shows how:
 
 ---
 
-# 🏗 Project Structure
+## 🏗 Project Structure
 
 ```
 django-intro-template/
@@ -50,9 +50,9 @@ django-intro-template/
 
 ---
 
-# ⚡ 1. Setup Django (Run Project)
+## ⚡ 1. Setup Django (Run Project)
 
-## Clone Repository
+### 1.0 Clone Repository
 
 ```
 git clone https://github.com/rafi-shoishab/django-intro-template.git
@@ -61,16 +61,16 @@ cd django-intro-template
 
 ---
 
-## Create Virtual Environment
+### 1.1 Create Virtual Environment
 
-### Mac/Linux
+Mac/Linux
 
 ```
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### Windows
+Windows
 
 ```
 python -m venv .venv
@@ -79,21 +79,23 @@ python -m venv .venv
 
 ---
 
-## Install Dependencies
+1.2 Install Dependencies
 
 ```
 pip install -r requirements.txt
+pip install django
+pip install pillow
 ```
 
 ---
 
-## Run Development Server
+1.3 Run Development Server
 
 ```
 python manage.py runserver
 ```
 
-Open browser:
+1.4 Open browser:
 
 ```
 http://127.0.0.1:8000
@@ -101,13 +103,13 @@ http://127.0.0.1:8000
 
 ---
 
-# 🌐 2. HTTP Response Implementation
+## 🌐 2. HTTP Response Implementation
 
 This section explains how to return a simple HTTP response in Django.
 
 ---
 
-## Step 1 — Create Django App
+### Step 2.1 — Create Django App
 
 ```
 python manage.py startapp navigation
@@ -115,7 +117,7 @@ python manage.py startapp navigation
 
 ---
 
-## Step 2 — Register App in settings.py
+### Step 2.2 — Register App in settings.py
 
 File: `core/settings.py`
 
@@ -130,7 +132,7 @@ INSTALLED_APPS = [
 
 ---
 
-## Step 3 — Create View (HTTP Response)
+### Step 2.3 — Create View (HTTP Response)
 
 File: `navigation/views.py`
 
@@ -145,7 +147,7 @@ This view returns a simple text response.
 
 ---
 
-## Step 4 — Create App URL Configuration
+### Step 2.4 — Create App URL Configuration
 
 Create file: `navigation/urls.py`
 
@@ -160,7 +162,7 @@ urlpatterns = [
 
 ---
 
-## Step 5 — Connect App URLs to Project URLs
+### Step 2.5 — Connect App URLs to Project URLs
 
 File: `core/urls.py`
 
@@ -176,7 +178,7 @@ urlpatterns = [
 
 ---
 
-## Test HTTP Response
+### Test HTTP Response
 
 Run server and visit:
 
@@ -192,13 +194,13 @@ Hello Django
 
 ---
 
-# 🎨 3. Template Rendering Implementation
+## 🎨 3. Template Rendering Implementation
 
 This section explains how Django renders HTML templates.
 
 ---
 
-## Step 1 — Create Templates Folder
+### Step 3.1 — Create Templates Folder
 
 Create folder structure:
 
@@ -208,7 +210,7 @@ templates/index.html
 
 ---
 
-## Step 2 — Configure Template Directory in settings.py
+## Step 3.2 — Configure Template Directory in settings.py
 
 File: `core/settings.py`
 
@@ -230,7 +232,7 @@ This tells Django where to find HTML templates.
 
 ---
 
-## Step 3 — Create HTML Template
+## Step 3.3 — Create HTML Template
 
 File: `templates/index.html`
 
@@ -248,7 +250,7 @@ File: `templates/index.html`
 
 ---
 
-## Step 4 — Create View to Render Template
+## Step 3.4 — Create View to Render Template
 
 File: `navigation/views.py`
 
@@ -261,7 +263,7 @@ def home(request):
 
 ---
 
-## Step 5 — Add URL Route
+## Step 3.5 — Add URL Route
 
 File: `navigation/urls.py`
 
@@ -276,7 +278,7 @@ urlpatterns = [
 
 ---
 
-## Test Template Rendering
+### Step 3.6 - Test Template Rendering
 
 Run server and visit:
 
@@ -288,7 +290,7 @@ The HTML page will render.
 
 ---
 
-# 🔁 Django Request → Response Flow
+## 🔁 Django Request → Response Flow
 
 ```
 User Request
@@ -304,7 +306,7 @@ HTTP Response
 
 ---
 
-# 🎯 Learning Objectives
+## 🎯 Learning Objectives
 
 This project helps you learn:
 
@@ -357,7 +359,7 @@ db.sqlite3
 
 ---
 
-# 👨‍💻 Author
+### 👨‍💻 Author
 
 Rafiur Rahman Shoishab
 GitHub: https://github.com/rafi-shoishab
@@ -367,3 +369,4 @@ GitHub: https://github.com/rafi-shoishab
 # 📄 License
 
 This project is created for educational purposes.
+
