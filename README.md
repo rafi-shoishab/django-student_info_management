@@ -210,7 +210,7 @@ templates/index.html
 
 ---
 
-## Step 3.2 — Configure Template Directory in settings.py
+### Step 3.2 — Configure Template Directory in settings.py
 
 File: `core/settings.py`
 
@@ -232,7 +232,7 @@ This tells Django where to find HTML templates.
 
 ---
 
-## Step 3.3 — Create HTML Template
+### Step 3.3 — Create HTML Template
 
 File: `templates/index.html`
 
@@ -250,7 +250,7 @@ File: `templates/index.html`
 
 ---
 
-## Step 3.4 — Create View to Render Template
+### Step 3.4 — Create View to Render Template
 
 File: `navigation/views.py`
 
@@ -263,7 +263,7 @@ def home(request):
 
 ---
 
-## Step 3.5 — Add URL Route
+### Step 3.5 — Add URL Route
 
 File: `navigation/urls.py`
 
@@ -369,5 +369,6 @@ GitHub: https://github.com/rafi-shoishab
 # 📄 License
 
 This project is created for educational purposes.
+
 
 
